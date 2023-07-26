@@ -1,0 +1,34 @@
+hr.wp-block-separator[class*=is-style-icon] {
+	display: flex;
+	justify-content: center;
+	border: none;
+	text-align: center;
+	overflow: visible;
+	width: 100% !important;
+
+	// Use `!important` to overrule core's use of the `background` shorthand.
+	background-color: transparent !important;
+	background-repeat: repeat-x !important;
+	background-position: 0% 50% !important;
+	background-size: 100% 2px !important;
+
+	// Don't use `!important` for the background image, which allows user-
+	// selected background gradients to work.
+	background-image: linear-gradient( 90deg, currentColor, currentColor );
+
+	// Styles the icon.
+	&::before {
+		// floral-heart default icon.
+		content: var( --separator-icon, "\2766" );
+		padding: 0 0.5em;
+		font-size: var( --wp--preset--font-size--large );
+		line-height: 1;
+		background-color: var( --wp--preset--color--base );
+	}
+
+	// If parent has background color, inherit down to the icon background.
+	:where( .has-background[class*=-background-color] ) &,
+	:where( .has-background[class*=-background-color] ) &::before {
+		background-color: inherit !important;
+	}
+}
