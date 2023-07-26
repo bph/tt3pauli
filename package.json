@@ -1,5 +1,5 @@
 {
-	"name": "tt3-pauli",
+	"name": "tt3pauli",
 	"scripts": {
 		"start": "wp-scripts start --webpack-src-dir=resources --output-path=public",
 		"build": "wp-scripts build --webpack-src-dir=resources --output-path=public"
