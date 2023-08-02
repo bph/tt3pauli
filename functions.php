@@ -37,3 +37,24 @@ function tt3pauli_editor_styles() {
 /* 
     you need to enqueue your editor script and style:
 */
+add_action( 'enqueue_block_editor_assets', 'tt3pauli_editor_assets' );
+
+function tt3pauli_editor_assets() {
+	$script_asset = include get_parent_theme_file_path( 'public/js/editor.asset.php'  );
+	$style_asset  = include get_parent_theme_file_path( 'public/css/editor.asset.php' );
+
+	wp_enqueue_script(
+		'tt3pauli-editor',
+		get_parent_theme_file_uri( 'public/js/editor.js' ),
+		$script_asset['dependencies'],
+		$script_asset['version'],
+		true
+	);
+
+	wp_enqueue_style(
+		'tt3pauli-editor',
+		get_parent_theme_file_uri( 'public/css/editor.css' ),
+		$style_asset['dependencies'],
+		$style_asset['version']
+	);
+}

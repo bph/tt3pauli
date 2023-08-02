@@ -26,4 +26,26 @@ hr.wp-block-separator[class*=is-style-icon]::before {
   background-color: inherit !important;
 }
 
+/* 
+  In the code above there is a CSS custom property named
+  `--separator-icon`, which can be used to override the icon.
+
+*/
+.is-style-icon-blossom        { --separator-icon: "🌼"; }
+.is-style-icon-sun            { --separator-icon: "☀️"; }
+.is-style-icon-feather        { --separator-icon: "🪶"; }
+.is-style-icon-fire           { --separator-icon: "🔥"; }
+.is-style-icon-leaves         { --separator-icon: "🍃"; }
+.is-style-icon-coffee         { --separator-icon: "☕"; }
+.is-style-icon-beer           { --separator-icon: "🍻"; }
+.is-style-icon-lotus          { --separator-icon: "🪷"; }
+.is-style-icon-melting-face   { --separator-icon: "🫠"; }
+.is-style-icon-guitar         { --separator-icon: "🎸"; }
+.is-style-icon-pencil         { --separator-icon: "✏️"; }
+.is-style-icon-rocket         { --separator-icon: "🚀"; }
+.is-style-icon-clover         { --separator-icon: "☘️"; }
+.is-style-icon-star           { --separator-icon: "⭐"; }
+.is-style-icon-sunflower      { --separator-icon: "🌻"; }
+.is-style-icon-beach-umbrella { --separator-icon: "⛱️"; }
+
 /*# sourceMappingURL=screen.css.map*/
