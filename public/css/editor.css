@@ -1,1 +1,57 @@
-.tt3pauli-sep-icons-popover .components-popover__content{padding:16px}.tt3pauli-sep-icons-picker__description{margin:0 0 16px}.tt3pauli-sep-icons-picker__button{font-size:20px}
+/*!***************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./resources/scss/editor.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************/
+/**
+ * SCSS Variables.
+ *
+ * Please use variables from this sheet to ensure consistency across the UI.
+ * Don't add to this sheet unless you're pretty sure the value will be reused in many places.
+ * For example, don't add rules to this sheet that affect block visuals. It's purely for UI.
+ */
+/**
+*  Converts a hex value into the rgb equivalent.
+*
+* @param {string} hex - the hexadecimal value to convert
+* @return {string} comma separated rgb values
+*/
+/**
+ * Colors
+ */
+/**
+ * Fonts & basic variables.
+ */
+/**
+ * Grid System.
+ * https://make.wordpress.org/design/2019/10/31/proposal-a-consistent-spacing-system-for-wordpress/
+ */
+/**
+ * Dimensions.
+ */
+/**
+ * Shadows.
+ */
+/**
+ * Editor widths.
+ */
+/**
+ * Block & Editor UI.
+ */
+/**
+ * Block paddings.
+ */
+/**
+ * React Native specific.
+ * These variables do not appear to be used anywhere else.
+ */
+.tt3pauli-sep-icons-popover .components-popover__content {
+  padding: 16px;
+}
+
+.tt3pauli-sep-icons-picker__description {
+  margin: 0 0 16px;
+}
+.tt3pauli-sep-icons-picker__button {
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=editor.css.map*/

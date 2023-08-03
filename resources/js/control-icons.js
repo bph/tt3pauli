@@ -19,7 +19,9 @@ export default ( { attributes: { className }, setAttributes } ) => {
     const currentIcon = getIconFromClassName( className );
 
 	// Update the icon class and gradient.
-    const onIconButtonClick = ( icon ) => setAttributes( {
+    const onIconButtonClick = ( icon ) => {
+
+        setAttributes( {
 	    className: updateIconClass(
             className,
             currentIcon === icon.value ? '' : icon.value,
@@ -28,7 +30,13 @@ export default ( { attributes: { className }, setAttributes } ) => {
         gradient: currentIcon === icon.value || ! icon?.gradient
             ? undefined
             : icon?.gradient
-    } );
+    });
+    console.log('current icon:', currentIcon);
+    console.log('icon:', icon);
+    console.log('className:', className);
+    console.log(getIconFromClassName(className))
+}
+   
     // Builds a menu item for an icon.
     const iconButton = ( icon, index ) => (
         <Button
@@ -78,5 +86,4 @@ export default ( { attributes: { className }, setAttributes } ) => {
             renderContent={ () => iconPicker }
         />
     );
-
-};
+    }
