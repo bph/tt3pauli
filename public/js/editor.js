@@ -165,16 +165,19 @@ __webpack_require__.r(__webpack_exports__);
 
   // Update the icon class and gradient.
   const onIconButtonClick = icon => {
+    console.log('Clicked Icon:', icon);
+    console.log('Current ClassName:', className);
     setAttributes({
       className: (0,_utils__WEBPACK_IMPORTED_MODULE_2__.updateIconClass)(className, currentIcon === icon.value ? '' : icon.value, currentIcon),
       gradient: currentIcon === icon.value || !icon?.gradient ? undefined : icon?.gradient
     });
     console.log('current icon:', currentIcon);
-    console.log('icon:', icon);
-    console.log('className:', className);
-    console.log((0,_utils__WEBPACK_IMPORTED_MODULE_2__.getIconFromClassName)(className));
+    // Log the updated attributes after calling setAttributes.
+    console.log('Updated Attributes:', {
+      className: (0,_utils__WEBPACK_IMPORTED_MODULE_2__.updateIconClass)(className, currentIcon === icon.value ? '' : icon.value, currentIcon),
+      gradient: currentIcon === icon.value || !icon?.gradient ? undefined : icon?.gradient
+    });
   };
-
   // Builds a menu item for an icon.
   const iconButton = (icon, index) => {
     var _icon$icon;
